@@ -13,14 +13,14 @@ gem 'globalid', github: 'rails/globalid'
 # ensure correct loading order
 gem 'mocha', '~> 0.14', require: false
 
-gem 'rack-cache', '~> 1.2'
+gem 'rack-cache', '~> 1.3', '>= 1.3.0'
 gem 'jquery-rails', github: 'rails/jquery-rails', branch: 'master'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'turbolinks'
+gem 'coffee-rails', '~> 4.2.2'
+gem 'turbolinks', '>= 2.5.4'
 gem 'arel', github: 'rails/arel', branch: 'master'
 gem 'mail', github: 'mikel/mail'
 
-gem 'sprockets', '~> 3.0.0.rc.1'
+gem 'sprockets', '~> 3.3.5.0.0'
 gem 'sprockets-rails', github: 'rails/sprockets-rails', branch: 'master'
 
 # require: false so bcrypt is loaded only when has_secure_password is used.
@@ -33,10 +33,10 @@ gem 'bcrypt', '~> 3.1.10', require: false
 gem 'uglifier', '>= 1.3.0', require: false
 
 group :doc do
-  gem 'sdoc', '~> 0.4.0'
+  gem 'sdoc', '~> 1.0.0'
   gem 'redcarpet', '~> 3.2.3', platforms: :ruby
-  gem 'w3c_validators'
-  gem 'kindlerb', '0.1.1'
+  gem 'w3c_validators', '>= 1.3'
+  gem 'kindlerb', '1.0.1'
 end
 
 # ActiveSupport
@@ -44,8 +44,8 @@ gem 'dalli', '>= 2.2.1'
 
 # ActiveJob
 group :job do
-  gem 'resque', require: false
-  gem 'resque-scheduler', require: false
+  gem 'resque', '>= 1.26.0', require: false
+  gem 'resque-scheduler', '>= 4.1.0', require: false
   gem 'sidekiq', require: false
   gem 'sucker_punch', require: false
   gem 'delayed_job', require: false
@@ -76,7 +76,7 @@ group :test do
 end
 
 platforms :ruby do
-  gem 'nokogiri', '>= 1.4.5'
+  gem 'nokogiri', '>= 1.15.6'
 
   # Needed for compiling the ActionDispatch::Journey parser
   gem 'racc', '>=1.4.6', require: false
