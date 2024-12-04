@@ -16,7 +16,7 @@ gem 'mocha', '~> 0.14', require: false
 gem 'rack-cache', '~> 1.2'
 gem 'jquery-rails', github: 'rails/jquery-rails', branch: 'master'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'arel', github: 'rails/arel', branch: 'master'
 gem 'mail', github: 'mikel/mail'
 
@@ -76,7 +76,7 @@ group :test do
 end
 
 platforms :ruby do
-  gem 'nokogiri', '>= 1.4.5'
+  gem 'nokogiri', '>= 1.15.7'
 
   # Needed for compiling the ActionDispatch::Journey parser
   gem 'racc', '>=1.4.6', require: false
