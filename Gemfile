@@ -16,7 +16,7 @@ gem 'mocha', '~> 0.14', require: false
 gem 'rack-cache', '~> 1.2'
 gem 'jquery-rails', github: 'rails/jquery-rails', branch: 'master'
 gem 'coffee-rails', '~> 4.1.0'
-gem 'turbolinks'
+gem 'turbolinks', '>= 5.0.0'
 gem 'arel', github: 'rails/arel', branch: 'master'
 gem 'mail', github: 'mikel/mail'
 
@@ -44,7 +44,7 @@ gem 'dalli', '>= 2.2.1'
 
 # ActiveJob
 group :job do
-  gem 'resque', require: false
+  gem 'resque', '>= 2.2.1', require: false
   gem 'resque-scheduler', require: false
   gem 'sidekiq', require: false
   gem 'sucker_punch', require: false
