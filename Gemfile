@@ -15,8 +15,8 @@ gem 'mocha', '~> 0.14', require: false
 
 gem 'rack-cache', '~> 1.2'
 gem 'jquery-rails', github: 'rails/jquery-rails', branch: 'master'
-gem 'coffee-rails', '~> 4.1.0'
-gem 'turbolinks'
+gem 'coffee-rails', '~> 4.1.1'
+gem 'turbolinks', '>= 2.5.4'
 gem 'arel', github: 'rails/arel', branch: 'master'
 gem 'mail', github: 'mikel/mail'
 
@@ -35,8 +35,8 @@ gem 'uglifier', '>= 1.3.0', require: false
 group :doc do
   gem 'sdoc', '~> 0.4.0'
   gem 'redcarpet', '~> 3.2.3', platforms: :ruby
-  gem 'w3c_validators'
-  gem 'kindlerb', '0.1.1'
+  gem 'w3c_validators', '>= 1.3'
+  gem 'kindlerb', '1.0.1'
 end
 
 # ActiveSupport
@@ -50,7 +50,7 @@ group :job do
   gem 'sucker_punch', require: false
   gem 'delayed_job', require: false
   gem 'queue_classic', github: "QueueClassic/queue_classic", require: false, platforms: :ruby
-  gem 'sneakers', require: false
+  gem 'sneakers', '>= 1.1.0', require: false
   gem 'que', require: false
   gem 'backburner', require: false
   gem 'qu-rails', github: "bkeepers/qu", branch: "master", require: false
@@ -76,7 +76,7 @@ group :test do
 end
 
 platforms :ruby do
-  gem 'nokogiri', '>= 1.4.5'
+  gem 'nokogiri', '>= 1.18.9'
 
   # Needed for compiling the ActionDispatch::Journey parser
   gem 'racc', '>=1.4.6', require: false
